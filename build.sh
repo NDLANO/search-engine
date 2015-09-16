@@ -8,4 +8,5 @@ GIT_HASH=`git log --pretty=format:%h -n 1`
 
 VERSION=${VER}_${GIT_HASH}
 
-docker build -t $PROJECT:$VERSION -t $PROJECT:latest .
+docker build -t $PROJECT:$VERSION .
+docker tag $PROJECT:$VERSION $PROJECT:latest
