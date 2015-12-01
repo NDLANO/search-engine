@@ -2,7 +2,7 @@
 
 source ./build.properties
 
-PROJECT="$NDLAOrganization/image-search"
+PROJECT="$NDLAOrganization/search-engine"
 VER="v$NDLAComponentVersion"
 GIT_HASH=`git log --pretty=format:%h -n 1`
 
