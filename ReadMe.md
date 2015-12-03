@@ -1,6 +1,6 @@
-# Image Search
+# Search Engine
 
-The search index for the image-api
+The search engine for the various ndla api's
 
 # Building and distribution
 
@@ -10,7 +10,7 @@ The search index for the image-api
 You need to have a docker daemon running locally. Ex: [boot2docker](http://boot2docker.io/)
 
 ## Deploy Docker Image locally
-    ndla deploy local image-search
+    ndla deploy local search-engine
 
 ## Deploy Docker Image to Amazon (via DockerHub)
-    ndla deploy test image-search
+    ndla deploy test search-engine
