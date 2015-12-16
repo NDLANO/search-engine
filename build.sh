@@ -1,12 +1,13 @@
 #!/bin/bash
 
+VERSION="$1"
 source ./build.properties
+PROJECT="$NDLAOrganization/$NDLAComponentName"
 
-PROJECT="$NDLAOrganization/search-engine"
-VER="v$NDLAComponentVersion"
-GIT_HASH=`git log --pretty=format:%h -n 1`
-
-VERSION=${VER}_${GIT_HASH}
+if [ -z $VERSION ]
+then
+    VERSION="SNAPSHOT"
+fi
 
 docker build -t $PROJECT:$VERSION .
-docker tag -f $PROJECT:$VERSION $PROJECT:latest
+echo "BUILT $PROJECT:$VERSION"
