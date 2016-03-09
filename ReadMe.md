@@ -14,3 +14,6 @@ You need to have a docker daemon running locally. Ex: [boot2docker](http://boot2
 
 ## Deploy Docker Image to Amazon (via DockerHub)
     ndla deploy test search-engine
+
+# Generate indexes
+See /deploy/ReadMe.md
