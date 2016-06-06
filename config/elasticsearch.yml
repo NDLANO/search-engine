@@ -1,2 +1,5 @@
 cluster:
   name: search-engine
+
+network:
+  host: 0.0.0.0
