@@ -1,3 +1,5 @@
+**_DEPRECATED_**
+
 # Search Engine
 
 The search engine for the various ndla api's
