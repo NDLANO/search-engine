@@ -1,3 +1,4 @@
-FROM elasticsearch:2.3.3
+FROM docker.elastic.co/elasticsearch/elasticsearch:6.8.4
 
-COPY config/ /usr/share/elasticsearch/config/
+COPY compound-words-norwegian-wordlist.txt /usr/share/elasticsearch/config/
+COPY hyph/ /usr/share/elasticsearch/config/hyph/
